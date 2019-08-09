@@ -10,7 +10,7 @@ export const HomeDiv = styled.div`
 
 const Home = () => (
   <HomeDiv id='home'>
-    <div class='container'>
+    <div className='container'>
       <div class='item left'>
         <p>TEST</p>
       </div>

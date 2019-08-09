@@ -20,7 +20,7 @@ li {
     /* Animated Bottom Line */
     a {
 
-        color: #fff;
+        color: rgb(157, 150, 150);
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 0.15em;
@@ -46,3 +46,109 @@ li {
       }
 }
 
+
+@import '~antd/dist/antd.css';
+
+.menuBar{
+  padding: 0 20px;
+  border-bottom: solid 1px #e8e8e8;
+  overflow: auto;
+  box-shadow: 0 0 30px #f3f1f1;
+}
+
+
+.barsMenu{
+  float: right;
+  height: 32px;
+  padding: 6px;
+  margin-top: 8px;
+  display: none;
+  background: none;
+}
+.barsBtn{
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #5b5b5c;
+  position: relative;
+}
+.ant-btn-primary {
+border-color:#fff;
+}
+.barsBtn:after,.barsBtn:before{
+  content: attr(x);
+  width: 20px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 2px;
+  background: #5b5b5c;
+}
+.barsBtn:after{
+  top: auto;
+  bottom: -6px;
+}
+.ant-drawer-header,.ant-drawer-wrapper-body {
+    background: url(../../assets/sides.jpg) no-repeat 100% 50%;
+    color:white;
+}
+.ant-drawer-title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 22px;
+}
+.ant-drawer-body{
+  padding: 0;
+}
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item, .ant-drawer-body .ant-menu-horizontal > .ant-menu-submenu{
+  display: inline-block;
+  width: 100%;
+}
+.ant-drawer-body .ant-menu-horizontal{
+  border-bottom: none;
+}
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item:hover{
+  border-bottom-color: transparent;
+}
+
+
+@media(max-width: 767px){
+
+    .nav-wrapper {
+
+        display:flex;
+        flex-direction: row;
+    }
+
+    .menu {
+
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        color: rgb(105, 48, 48);
+        margin: 1.6rem;
+    }
+    li {
+        margin:0.65rem;
+        a {
+            margin-top: 40px;
+            color: #ffffff;
+        }
+    }
+  .barsMenu{
+    display: inline-block;
+  }
+  .leftMenu,.rightMenu{
+    display: none;
+  }
+
+  .menuCon .ant-menu-item, .menuCon .ant-menu-submenu-title{
+    padding: 1px 20px;
+  }
+
+}
