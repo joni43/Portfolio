@@ -1,0 +1,30 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left, .right {
+    flex-basis: 25%;
+    background: url(../../assets/sides.jpg) no-repeat 100% 50%;
+    background-size: cover;
+  }
+  .middle {
+    flex-basis: 77%;
+    flex-shrink: 0;
+    background: #121212;
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 1;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 85px;
+    left: 14%;
+}
+
+.logo span {
+    margin:0.2rem;
+    color: #FFF;
+}
