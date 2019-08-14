@@ -1,3 +1,9 @@
+
+img {
+  width:200px;
+}
+
+
 .container {
     height: 100vh;
     display: flex;
@@ -7,8 +13,17 @@
   .left, .right {
     flex-basis: 25%;
     background: url(../../assets/sides.jpg) no-repeat 100% 50%;
+    animation: animatedBackground1 4s cubic-bezier(0.075, 0.82, 0.165, 1);
     background-size: cover;
   }
+  @keyframes animatedBackground1 {
+    from {
+      background-position: 50% 50%;
+    }
+    to {
+      background-position: 100% 50%;
+    }
+}
   .middle {
     flex-basis: 77%;
     flex-shrink: 0;
@@ -20,7 +35,7 @@
     z-index: 1;
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.4);
-    line-height: 85px;
+    line-height: 88px;
     left: 14%;
 }
 
@@ -28,6 +43,8 @@
     margin:0.2rem;
     color: #FFF;
 }
+
+
 
 @media(max-width: 767px){
   .logo {

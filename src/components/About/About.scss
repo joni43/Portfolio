@@ -1,0 +1,41 @@
+
+.About-me {
+    height: 60vh;
+    margin:20px;
+    background-color: dimgrey;
+    display:flex;
+    color:#fff;
+}
+img {
+    width:auto;
+}
+.image-me{
+    display:flex;
+    // width:400px;
+}
+.skills {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.text-me {
+    width:40vw;
+    margin:auto;
+    margin-right: 20px;
+}
+
+i {
+    margin-right: 20px;
+}
+
+@media(max-width: 767px){
+
+    .About-me {
+        display:flex;
+        flex-direction: column;
+    }
+    .text-me {
+        width: 95%;
+        margin-left:20px;
+    }
+}
