@@ -1,0 +1,35 @@
+
+.my-projects {
+    // height: 60vh;
+    margin:20px;
+    background-color: dimgrey;
+    display:flex;
+    color:#fff;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    img {
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}
+
+.ant-card{
+    margin: 0 2% 2%;
+}
+
+@media(max-width: 767px){
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .ant-card{
+        width: auto!important;;
+    }
+}

@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components'
 import Typist from 'react-typist';
+import Tween from 'rc-tween-one';
 
 // import TweenOne from 'rc-tween-one';
 import me from  '../../assets/me.png'
@@ -25,7 +26,10 @@ class About extends React.Component {
     return (
         <div className="About-me">
             <div class="image-me">
-            <img src={me}></img>
+            <Tween animation={{ blur: '1px', duration: 2000 }}
+        style={{ filter: 'blur(50px)' }}
+      >
+            <img src={me}></img></Tween>
             </div>
 
             <div class="text-me">

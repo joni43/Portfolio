@@ -5,8 +5,8 @@ import Tween from 'rc-tween-one';
 
 import './home.scss'
 import About from '../About/About'
-
 import Navbar from '../Navbar/Navbar'
+import Portfolio from '../Portfolio/Portfolio'
 export const HomeDiv = styled.div`
   background-color: lightcoral;
 `
@@ -25,7 +25,8 @@ const Home = () => (
           <Logo></Logo>
 
         <Navbar></Navbar>
-    <About></About>
+        <About></About>
+        <Portfolio ></Portfolio>
 
       </div>
       <div class='item right'>
