@@ -7,8 +7,10 @@ import './home.scss'
 import About from '../About/About'
 import Navbar from '../Navbar/Navbar'
 import Portfolio from '../Portfolio/Portfolio'
+import Resume from '../Resume/Resume'
+
 export const HomeDiv = styled.div`
-  background-color: lightcoral;
+
 `
 
 const Home = () => (
@@ -17,7 +19,7 @@ const Home = () => (
     <div className='container'>
 
       <div class='item left'>
-        <p>TEST</p>
+
       </div>
 
       <div class='item middle'>
@@ -27,10 +29,11 @@ const Home = () => (
         <Navbar></Navbar>
         <About></About>
         <Portfolio ></Portfolio>
+        <Resume></Resume>
 
       </div>
       <div class='item right'>
-        <p>TEST</p>
+        
       </div>
     </div>
   </HomeDiv>

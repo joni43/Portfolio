@@ -14,9 +14,10 @@
 
 li {
   margin: 0.65rem;
-
+  cursor: pointer;
+  
   /* Animated Bottom Line */
-  a {
+  .nav-list {
     color: rgb(157, 150, 150);
     text-transform: uppercase;
     text-decoration: none;
@@ -32,7 +33,7 @@ li {
       height: 1px;
       left: 50%;
       position: absolute;
-      background: #fff;
+      background: rgb(250, 6, 6);
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }
@@ -114,7 +115,14 @@ li {
   border-bottom-color: transparent;
 }
 
+@media (min-width:767px) {
+  .ant-drawer {
+    display:none;
+    overflow: scroll;
+  }
+}
 @media (max-width: 767px) {
+
   .nav-wrapper {
     display: flex;
     flex-direction: row;
@@ -130,7 +138,7 @@ li {
   }
   li {
     margin: 0.65rem;
-    a {
+    .nav-list {
       margin-top: 40px;
       color: #ffffff;
     }

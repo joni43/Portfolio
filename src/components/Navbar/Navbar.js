@@ -1,31 +1,21 @@
 import React, {Component} from 'react'
-import styled from 'styled-components'
 import './NavBar.scss'
 import { Drawer, Button } from 'antd';
+var ScrollAnim = require('rc-scroll-anim');
+var Link = ScrollAnim.Link;
 
-const NavDrawer = styled(Drawer)`
-@media (min-width: 767px) {
-    display:none;
-}
-`
-// const NavMenu = styled(Menu)`
-//  flex-direction: row;
-//     display: flex;
-//     justify-content: flex-end;
-//     list-style: none;
-//     color: #fff;
-//     margin: 1.6rem;
-// `
+
+
 const Nav = () => (
 
     <div className="nav-wrapper">
 
     <ul className="menu">
 
-    <li><a href="#">About</a></li>
-<li><a href="#">Portfolio</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Contact</a></li>
+    <li><Link className="nav-list" to="page0">About</Link></li>
+    <li><Link className="nav-list" to="page1">Portfolio</Link></li>
+    <li><Link className="nav-list" to="page2">Resume</Link></li>
+
 
     </ul>
 </div>
@@ -33,7 +23,7 @@ const Nav = () => (
 
 class Navbar extends Component {
     state = {
-      current: 'mail',
+
       visible: false
     }
     showDrawer = () => {
@@ -59,7 +49,7 @@ class Navbar extends Component {
                 <Button className="barsMenu" type="primary" onClick={this.showDrawer}>
                   <span className="barsBtn"></span>
                 </Button>
-                <NavDrawer
+                <Drawer
                   title="Menu"
                   placement="right"
                   closable={false}
@@ -68,7 +58,7 @@ class Navbar extends Component {
                 >
 
                   <Nav />
-                </NavDrawer>
+                </Drawer>
 
             </nav>
         );

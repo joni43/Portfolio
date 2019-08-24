@@ -1,0 +1,47 @@
+
+
+.resume-row{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+    & p {
+        font-size:0.8rem;
+
+
+          margin-top:5px;
+          color:#fdfdff;
+
+    }
+}
+
+.resume-columns,.resume-skills {
+    flex-basis: 50%;
+    margin:20px 20px 5px 30px;
+    &p {
+        margin: 10px 20px 10px 20px;
+
+    }
+}
+
+.heading {
+    font-size:28px;
+    padding-bottom:10px;
+    border-bottom:2px solid #636366;
+    margin-top:30px;
+  }
+
+  .subtitle {
+    padding-bottom:5px;
+    margin:0px;
+    color:#636366;
+    font-size:19px;
+  }
+
+
+
+  @media(max-width: 767px){
+    .resume-row{
+        display:flex;
+        flex-direction: column;
+    }
+}

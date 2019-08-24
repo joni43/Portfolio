@@ -1,15 +1,15 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types';
-import styled from 'styled-components'
+
 import Typist from 'react-typist';
 import Tween from 'rc-tween-one';
 
 // import TweenOne from 'rc-tween-one';
 import me from  '../../assets/me.png'
 import './About.scss'
+import Contact from '../Contact/Contact'
 import PathPlugin from 'rc-tween-one/lib/plugin/PathPlugin';
 // TweenOne.plugins.push(PathPlugin);
-
 
 class About extends React.Component {
   state = {
@@ -24,7 +24,9 @@ class About extends React.Component {
 
   render() {
     return (
-        <div className="About-me">
+
+        <div className="About-me" id="page0">
+
             <div class="image-me">
             <Tween animation={{ blur: '1px', duration: 2000 }}
         style={{ filter: 'blur(50px)' }}
@@ -36,7 +38,9 @@ class About extends React.Component {
                 <h2>About Me</h2>
 
                 <p>I am a student, and study to become a a Front End Developer. I always liked being in front of a computer screen, as much as a chef loves to be in a kitchen.
-                I hope one day, to become a part of a an amazing team that create websites and applications.</p>
+                I hope one day, to become a part of a an amazing team that create websites and applications.
+                My skills are Javascript, HTML, CSS, NodeJS and React which is use the most when creating, but also got experience with VUE.
+                </p>
 
 
                 <div class="skills">
@@ -59,6 +63,7 @@ class About extends React.Component {
 
 
             </div>
+            <Contact></Contact>
             </div>
         </div>
 

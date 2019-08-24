@@ -5,6 +5,10 @@
     background-color: dimgrey;
     display:flex;
     color:#fff;
+
+    & p {
+        color:#fff;
+    }
 }
 img {
     width:auto;

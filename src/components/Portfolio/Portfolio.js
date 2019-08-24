@@ -2,12 +2,15 @@ import React from 'react'
 
 import './Portfolio.scss'
 import projects from '../../Projects/Projects'
-import Cards from './Cards'
+import Cards from './Card/Cards'
+
+var ScrollAnim = require('rc-scroll-anim');
+var Element = ScrollAnim.Element;
 const Portfolio = ({Projects}) => (
     <div className="test"> <h1>Projects</h1>
     <section className="my-projects">
 
-       <div className="projects-container">
+       <div className="projects-container" id="page1">
 
         {projects.map(project => (
           <Cards {...project} key={project.id} />
